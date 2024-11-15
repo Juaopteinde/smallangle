@@ -40,6 +40,13 @@ def tan(number):
 @click.option("-t", "--tan", is_flag=True, default=False)
 @click.option("-s", "--sin", is_flag=True, default=False)
 def approx(epsilon, tan, sin):
+    """Print the maximum angle for which the small angle of sin(x) and/or tan(x) holds within given accuracy.
+
+    Args:
+        epsilon (str): accuracy whithin which approx must hold
+        tan (bool): choose if you want to calculate only for tan(x)
+        sin (bool): choose if you want to calculate only for sin(x)
+    """
 
     # print max small angle approx for sin(x)
     if sin:
